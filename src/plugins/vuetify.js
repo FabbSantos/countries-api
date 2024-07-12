@@ -14,27 +14,6 @@ import { createVuetify } from 'vuetify'
 // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 import { createApp } from 'vue'
 
-
-
-// const myCustomLightTheme = {
-//   dark: false,
-//   colors: {
-//     backgroundApp: 'hsl(0, 0%, 98%)',
-//     primaryText: 'hsl(200, 15%, 8%)', //light-mode-text
-//     'elements': 'hsl(0, 0%, 100%)', //dark-mode-elements
-//     'input': 'hsl(0, 0%, 52%)',
-//   }
-// }
-// const myCustomDarkTheme = {
-//   dark: true,
-//   colors: {
-//     backgroundApp: 'hsl(207, 26%, 17%)',
-//     primaryText: 'hsl(0, 0%, 100%)', //dark-mode-text
-//     'elements': 'hsl(209, 23%, 22%)', //dark-mode-elements
-//     'input': 'hsl(0, 0%, 52%)',
-//   }
-
-// }
 export default createVuetify({
         
 })

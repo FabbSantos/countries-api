@@ -58,6 +58,9 @@
 </script>
 
 <template>
+        <p class="author">
+                Developed By <a href=""> Fabrício Bahiense</a> 
+        </p>
         <div class="allContainer">
                 <div class="filters">
                         <v-text-field type="text" v-model="searchQuery" theme @input="searchCountries"
@@ -116,9 +119,36 @@
          .v-input__prepend {
                 margin-inline-start: 16px;
         } 
+        .author {
+                position: fixed;
+                bottom: 3%;
+                left: 1%;
+                font-weight:300;
+                letter-spacing: 1px;
+                font-size: .3rem;
+                z-index: 99999;
+                font-style: italic;
+                color: hsl(0, 0%, 52%);
+                opacity: .5;
+                transition: all .2s ease-in-out;
+        }
+        .author:hover {
+                opacity: 1;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+        }
+        .author a {
+                color: inherit;
+                text-decoration: wavy underline;
+        }
         @media (max-width: 768px) {
                 .allContainer {
                         align-items: center;
+                }
+                .author {
+                        position: relative;
+                        bottom: auto;
+                        top: .01%;
+                        text-align: center;
                 }
                 .countriesContainer {
                         grid-template-columns: 1fr;
